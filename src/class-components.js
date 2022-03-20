@@ -199,7 +199,6 @@ class TestsClass extends React.Component {
   }
   
   class CalculateForMe extends React.Component {
-    // created on 14/03/2022 to do "TOP CODERS BY BANCO SAFRA"
   
     constructor(props) {
       super(props);
