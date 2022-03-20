@@ -1,5 +1,12 @@
+/* life hacks */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* default from Create React App */
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,86 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* my CSS */
+.li-item-underline {
+  text-decoration:underline;
+}
+
+.li-item-red {
+  color: red;
+}
+
+.button-border-red{
+  border: 1px solid red;
+}
+
+.button-text-blue {
+  color: blue;
+}
+
+.button-red {
+  color: red;
+}
+
+.slot-machine-container{
+  border: 5px solid red;
+  margin: 2rem;
+  
+  display: grid;
+  /* grid-template-columns: 50px 50px 50px 50px; */
+  /* grid-template-rows: 150px 150px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "s1 s2 s3 play"
+    "rp rp rp play"
+  ;
+
+  width:  400px;
+  height: 300px;
+}
+
+.slot-item{
+  border: 2px solid green;
+  margin: 1px;
+  
+  grid-area: s1 s2 s3;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.slot-machine-status{
+  border: 1px solid blue;
+  margin: 1px;
+  
+  grid-area: rp;
+  width: 100%;
+  height: 100%;
+  /* justify-self: stretch; */
+}
+
+.slot-machine-play-button{
+  border: 1px solid yellow;
+
+  grid-area: play;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ctrl-v from Dave Ceddia */
+/* html, body, #root, .room {
+  height: 100%;
+  margin: 0;
+} */
+.lit {
+  background-color: white;
+  color: black;
+}
+.dark {
+  background-color: black;
+  color: white;
 }
